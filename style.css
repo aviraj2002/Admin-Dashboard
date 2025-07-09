@@ -421,7 +421,7 @@ main .recent-orders a {
 
 .right .top {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -447,29 +447,32 @@ main .recent-orders a {
   align-items: center;
 }
 
-
-.right .theme-toggler span.active{
+.right .theme-toggler span.active {
   background: var(--color-primary);
   color: white;
   border-radius: var(--border-radius-1);
 }
 
-.right .top .profile{
+.right .top .profile {
   display: flex;
   gap: 1rem;
   text-align: right;
 }
 
+.theme-btn-dark {
+  margin-left: 20%;
+}
+
 /*===============RECENT UPDATES==============*/
-.right .recent-updates{
+.right .recent-updates {
   margin-top: 1rem;
 }
 
-.right .recent-updates h2{
+.right .recent-updates h2 {
   margin-bottom: 0.8rem;
 }
 
-.right .recent-updates .updates{
+.right .recent-updates .updates {
   background: var(--color-white);
   padding: var(--card-padding);
   border-radius: var(--card-border-radius);
@@ -477,10 +480,30 @@ main .recent-orders a {
   transition: all 300ms ease;
 }
 
-.right .recent-updates .updates:hover{
+.right .recent-updates .updates:hover {
   box-shadow: none;
 }
-.right .recent-updates .updates .upadate{
-  display: grid;
-  grid-template-columns: 2.6rem auto;
+
+
+div .update {
+  display: flex;
+  gap: 5%;
+  margin-top: 1rem;
+}
+
+.profile-photos {
+  width:20%;
+  height: 20%;
+  justify-content: center; /* centers horizontally */
+  align-items: center; /* centers vertically */
+  background-color: lightgray; /* just for visibility */
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-photos img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         /* ensures the image fills the circle */
+  display: block; /* or 'cover' if you want it to fill */
 }
